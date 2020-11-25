@@ -1,0 +1,2 @@
+match(le:Dude {name: "Lebowski"})<-[:FRIEND_OF*3]-(some:Dude)
+return some;
