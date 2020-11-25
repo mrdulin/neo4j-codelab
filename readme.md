@@ -1,7 +1,7 @@
 # neo4j-codelab
 
-username: neo4j
-password: testpass
+- username: neo4j
+- password: testpass
 
 ## Usage
 
@@ -13,8 +13,16 @@ mkdir data
 mkdir plugins
 ```
 
-## References
+start neo4j via docker-compose:
+
+```bash
+docker-compose up
+```
+
+## Resources
 
 - https://neo4j.com/docs/cypher-refcard/current
 - https://neo4j.com/docs/
 - http://www.opencypher.org/
+- https://hub.docker.com/_/neo4j
+- https://neo4j.com/labs/apoc/4.1/installation/
