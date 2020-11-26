@@ -10,7 +10,12 @@ services:
       - 7474:7474
       - 7687:7687
     environment:
+      # https://neo4j.com/docs/operations-manual/current/docker/ref-settings/
+      # - NEO4J_dbms_security_auth__enabled=false
+
       - NEO4J_AUTH=neo4j/testpass
+
+      # 通过指定如下环境变量，在container中下载安装apoc，但可能会因为网络原因失败，可以从GitHub手动下载jar包，保存在plugins目录，并挂载进container
       # - NEO4JLABS_PLUGINS=["apoc"]
       # - NEO4J_apoc_export_file_enabled=true
       # - NEO4J_apoc_import_file_enabled=true
